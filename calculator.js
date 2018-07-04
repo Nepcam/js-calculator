@@ -39,9 +39,9 @@ function equal (operate) {
         } else if (operate === '/') {
             var z = parseFloat(entryOne) / parseFloat(entryTwo)
         } display.innerText =  z
-        }
+}
     
-        // clear the display 
+// clear the display 
 function clearDisplay () {
     display.innerText = ""
     display2.innerText = ""
@@ -49,3 +49,7 @@ function clearDisplay () {
     entryTwo.splice(0)
     operator.splice(0)
 }
+
+//Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
+//@param start — The zero-based location in the array from which to start removing elements.
+//@param deleteCount — The number of elements to remove.
