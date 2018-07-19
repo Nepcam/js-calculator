@@ -1,67 +1,90 @@
-.row {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.calculator {
+  height: 351px;
+  width: 249px;
+  background-color:red;
+  border : solid 3px rgb(215, 215, 215);
+  display: block;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+  box-shadow: 0 3px 9px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.10);
+  box-shadow: inset 0 3px 9px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.10)
+}
+
+.row button.tall {
+  height: 60px;
+  border-radius: 9%;
+  float: right;
+  margin-top: 0.3%;
+  margin-right: 14.3%;
+  margin-left: -14%;
+}
+
+.row button.btn-danger{
+  color: rgb(173, 25, 14);
+  font-weight: 600;
+}
+
+.row button {
+  width: 39px;
+  height: 30px;
+  border: 1.5px solid rgb(150, 150, 150);
+  margin-bottom :1px;
+  border-radius: 15%;
+  box-shadow: 0 3px 9px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.10);
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.2), 0 3px 9px 0 rgba(0,0,0,0.10)
+  }
+
+.row button:hover{
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.2), 0 0 0 0 rgba(0,0,0,0.10);
+}
+
+.row button:active{
+  background-color: rgb(180, 180, 180);
+  box-shadow: inset 0 3px 3px 0 rgb(215, 215, 215), 0 3px 3px 0 rgb(120, 120, 120);
+  opacity: 3;
+}
+
+.row button.operator:target{
+  background-color: rgb(150, 65, 59);
+  color:  rgb(120, 120, 120);
+}
+
+input{
+  height: 27px;
+  width: 210px;
+  border-bottom: 3px;
+  margin-bottom: 18px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.container {
+  text-align: center;
   }
   
-  .button-house {
-    width: 50px;
-  }
-  
-  button {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 2px;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 1px;
-  }
-  
-  button:focus {
-    outline: 0;
-  }
-  
-  .button-house.doubleWide {
-    width: 100px;
-  }
-  
-  .button-house.doubleWide > button {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  button.control {
-    background-color: rgb(204, 0, 0);
-  }
-  
-  button.number {
-    background-color: rgb(224, 118, 118);
-  }
-  .container {
-    text-align: center;
-  }
-  
-  #calculator {
-    width: 200px;
-    display: inline-block;
-    background-color: #DCDCDC;
-    border-radius: 2px;
-    border-style: solid;
-    border-color: #444444;
-    border-width: 1px;
-  }
-  
-  #display {
-    width: auto;
-    text-align: right;
-    margin: 15px;
-    padding: 5px;
-    overflow: hidden;
-    border-radius: 2px;
-    background-color: #EEEEEE;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #777777;
-  }
+#screen {
+  width: 167px;
+  text-align: right;
+  margin: 15px;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #EEEEEE;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #777777;
+}
+
+div.calculator div.type{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(180, 180, 180);
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-top: 6px;
+}
