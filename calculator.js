@@ -32,7 +32,6 @@ function checkNumberSize(){
   }
 }
 
-
 //check number for decimal points
 function checkNumberDecimal(i){
   screenDisplay = document.getElementById("screen").value;
