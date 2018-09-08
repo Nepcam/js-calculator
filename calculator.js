@@ -10,7 +10,7 @@ var screenDisplay ="";
 var temp = "";
 var calculation = "";
 
-//function
+//user clicks on the number selected
 function clickNum(i){ 
   checkForNewCalculation();
   checkNumberSize();
